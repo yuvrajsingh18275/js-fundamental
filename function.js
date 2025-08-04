@@ -56,9 +56,21 @@
 // })
 
 
-const addNum=(num1,num2)=>{
-    console.log(num1);
-    console.log(num2);
-    console.log(num1+num2);
+// const addNum=(num1,num2)=>{
+//     console.log(num1);
+//     console.log(num2);
+//     console.log(num1+num2);
+// }
+// addNum(18,8);
+
+const person ={
+    userName: "yuvraj",
+    age: 18,
+    greet: function greetings(){
+        console.log(this)
+        return(`hello ${this.userName}`);
+
+    }
 }
-addNum(18,8);
+console.log(person.greet());
+

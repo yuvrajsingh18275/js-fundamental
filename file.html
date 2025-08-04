@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Color Changer</title>
+</head>
+<body>
+    <button style="padding: 10px 20px; font-size: 20px; border-radius: 10px; background-color: red; color: white;" id="redBtn">Red</button>
+    <button style="padding: 10px 20px; font-size: 20px; border-radius: 10px; background-color: blue; color: white;" id="blueBtn">Blue</button>
+    <button style="padding: 10px 20px; font-size: 20px; border-radius: 10px; background-color: pink; color: black;" id="pinkBtn">Pink</button>
+
+    <script>
+        const redBtn = document.getElementById("redBtn");
+        const blueBtn = document.getElementById("blueBtn");
+        const pinkBtn = document.getElementById("pinkBtn");
+
+        redBtn.addEventListener('click', () => document.body.style.backgroundColor = "red");
+        blueBtn.addEventListener('click', () => document.body.style.backgroundColor = "blue");
+        pinkBtn.addEventListener('click', () => document.body.style.backgroundColor = "pink");
+    </script>
+</body>
+</html>

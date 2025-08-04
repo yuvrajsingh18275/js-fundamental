@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const firstH = document.createElement('h1'); //createElement
+    firstH.id = "first-heading"; //id
+    firstH.className = "para";  //class
+
+    const textNode = document.createTextNode("Hello World, Welcome to JS world");
+    
+    firstH.appendChild(textNode); //append
+    document.body.appendChild(firstH);
+
+    const ptag = document.createElement('p');
+    ptag.className = "para";
+
+    const textnode = document.createTextNode("This is first paragraph created using JS");
+    ptag.appendChild(textnode);
+    document.body.appendChild(ptag);
+</script>
+</html>
